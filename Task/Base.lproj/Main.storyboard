@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Task Detail Table View Controller-->
         <scene sceneID="DPc-nW-2dz">
             <objects>
-                <tableViewController id="6VT-aZ-3rQ" sceneMemberID="viewController">
+                <tableViewController id="6VT-aZ-3rQ" customClass="TaskDetailTableViewController" customModule="Task" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aCm-4G-j7Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,12 +35,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f2T-Kq-Q2Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="951" y="97"/>
+            <point key="canvasLocation" x="1556" y="43"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="nlq-zW-XUj">
             <objects>
-                <tableViewController id="TZf-Np-oMu" sceneMemberID="viewController">
+                <tableViewController id="TZf-Np-oMu" customClass="TaskListTableViewController" customModule="Task" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kdx-p1-0oi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,6 +53,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="6VT-aZ-3rQ" kind="show" id="Pza-ZH-gMK"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -61,12 +64,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="v1O-Pl-cSO">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="MBW-Gz-7V0"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="MBW-Gz-7V0">
+                            <connections>
+                                <segue destination="6VT-aZ-3rQ" kind="show" id="fQJ-DP-iDI"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6iD-A0-jNX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="97"/>
+            <point key="canvasLocation" x="730" y="43"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0CN-mR-7rJ">
@@ -82,6 +89,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebQ-TJ-oNx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-94" y="43"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fQJ-DP-iDI"/>
+    </inferredMetricsTieBreakers>
 </document>
