@@ -13,7 +13,7 @@ extension Task {
     
     @discardableResult
     
-    convenience init(name: String, notes: String? = nil, due: Date? = nil, context: NSManagedObjectContext = CoreDataStack.context) {
+    convenience init(name: String, notes: String? = nil, due: Date? = nil, context: NSManagedObjectContext = CoreDataStack.managedObjectContext) {
         self.init(context: context)
         self.name = name
         self.notes = notes

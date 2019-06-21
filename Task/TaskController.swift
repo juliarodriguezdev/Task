@@ -43,4 +43,10 @@ class TaskController {
         
         // fetch
     }
-}
+    
+    func toggleIsCompleteFor(task: Task) {
+       task.isComplete = !task.isComplete
+        }
+    
+    }
+

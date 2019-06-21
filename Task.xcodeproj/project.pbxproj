@@ -17,6 +17,8 @@
 		6A59627B22BADEA200C1FA32 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A59627A22BADEA200C1FA32 /* CoreDataStack.swift */; };
 		6A59627D22BAE29400C1FA32 /* Task+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A59627C22BAE29400C1FA32 /* Task+Convenience.swift */; };
 		6A59628222BAE4DE00C1FA32 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A59628122BAE4DE00C1FA32 /* TaskController.swift */; };
+		6A59628422BB01AE00C1FA32 /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A59628322BB01AE00C1FA32 /* DateHelpers.swift */; };
+		6A59628622BB12CB00C1FA32 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A59628522BB12CB00C1FA32 /* ButtonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		6A59627A22BADEA200C1FA32 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		6A59627C22BAE29400C1FA32 /* Task+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Convenience.swift"; sourceTree = "<group>"; };
 		6A59628122BAE4DE00C1FA32 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
+		6A59628322BB01AE00C1FA32 /* DateHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelpers.swift; sourceTree = "<group>"; };
+		6A59628522BB12CB00C1FA32 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 				6A59627922BADE5600C1FA32 /* Model */,
 				6A59627822BADE4800C1FA32 /* ViewControllers */,
 				6A59628122BAE4DE00C1FA32 /* TaskController.swift */,
+				6A59628522BB12CB00C1FA32 /* ButtonTableViewCell.swift */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -88,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				6A59627322BADC0500C1FA32 /* TaskListTableViewController.swift */,
+				6A59628322BB01AE00C1FA32 /* DateHelpers.swift */,
 				6A59627522BADD8600C1FA32 /* TaskDetailTableViewController.swift */,
 			);
 			path = ViewControllers;
@@ -174,11 +180,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A59628622BB12CB00C1FA32 /* ButtonTableViewCell.swift in Sources */,
 				6A59628222BAE4DE00C1FA32 /* TaskController.swift in Sources */,
 				6A59627B22BADEA200C1FA32 /* CoreDataStack.swift in Sources */,
 				6A59626722BAD9F000C1FA32 /* Task.xcdatamodeld in Sources */,
 				6A59627D22BAE29400C1FA32 /* Task+Convenience.swift in Sources */,
 				6A59627422BADC0500C1FA32 /* TaskListTableViewController.swift in Sources */,
+				6A59628422BB01AE00C1FA32 /* DateHelpers.swift in Sources */,
 				6A59627622BADD8600C1FA32 /* TaskDetailTableViewController.swift in Sources */,
 				6A59625F22BAD9F000C1FA32 /* AppDelegate.swift in Sources */,
 			);
@@ -328,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 899TSM5Z6B;
-				INFOPLIST_FILE = Task/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Task/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 899TSM5Z6B;
-				INFOPLIST_FILE = Task/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Task/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
